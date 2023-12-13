@@ -24,7 +24,7 @@ $result = $conn->query($sql);
 </nav>
 
 <main>
-    <h1> Inicia sesión o registrate </h1>
+    <h2 class="subtitulo"> ¡Inicia sesión o registrate para comprar!</h2>
     <div class="flex-container">
     <?php
     // Verifica si hay resultados de la consulta

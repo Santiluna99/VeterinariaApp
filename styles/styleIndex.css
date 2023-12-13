@@ -60,6 +60,13 @@ main h1 {
     color:#005eaa;
 }
 
+.subtitulo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(77, 77, 77);
+}
+
 .flex-container {
     display: flex;
     justify-content: center;
@@ -73,7 +80,7 @@ main h1 {
     height: 220px;
     width: 220px;
     border-radius: 10px;
-    box-shadow:  0px 0px 8px 0px #585858;
+    box-shadow:  0px 0px 8px 0px #b7b7b7;
     margin: 15px;
 }
 
@@ -94,7 +101,7 @@ footer {
     background: #005eaa;
     color: white;
     padding: 20px;
-    margin-bottom: 0px;
+    margin-top: 200px;
 }
 
 @media (min-width:320px) {
@@ -116,7 +123,7 @@ footer {
         height: 205px;
         width: 205px;
         border-radius: 10px;
-        box-shadow:  0px 0px 8px 0px #585858;
+        box-shadow:  0px 0px 8px 0px #b7b7b7;
         margin: 15px;
     }
     
@@ -152,7 +159,7 @@ footer {
         height: 245px;
         width: 245px;
         border-radius: 10px;
-        box-shadow:  0px 0px 8px 0px #585858;
+        box-shadow:  0px 0px 8px 0px #b7b7b7;
         margin: 15px;
     }
     
@@ -190,7 +197,7 @@ footer {
         height: 220px;
         width: 220px;
         border-radius: 10px;
-        box-shadow:  0px 0px 8px 0px #585858;
+        box-shadow:  0px 0px 8px 0px #b7b7b7;
         margin: 15px;
     }
     
@@ -227,7 +234,7 @@ footer {
         height: 220px;
         width: 220px;
         border-radius: 10px;
-        box-shadow:  0px 0px 8px 0px #585858;
+        box-shadow:  0px 0px 8px 0px #b7b7b7;
         margin: 15px;
     }
     

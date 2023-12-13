@@ -8,24 +8,32 @@
     <title>Register</title>
 </head>
 <body>
-    <section class="home-register"> 
-        <div class="main-register">
-            <div class="register-title">
-                <h2>Registra tu cuenta</h2>
-            </div>
-            <form class="form-register" action="save.php" method="POST">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre de usuario">
-                <input type="email" name="email"  placeholder="Email">
-                <input type="password" name="clave"  placeholder="Contraseña">
-                
-                <button type="submit" name="guardar_registro">Registrarse</button>
-                <hr>
-            </form>
-            <div class="register-terms">
-                <p>Al <em>registrarse</em> acepta nuestros <span>terminos</span> y <span>condiciones</span>.</p>
-            </div>
-            
+    <div class="section">
+        <div class="box1">
+        <img class="img" src="../imagenes/Animales.jpg" alt="">
         </div>
-    </section>
+        <div class="box2">
+            <h2>Registra tu cuenta</h2>
+            <form action="save.php" method="POST">
+                <!-- Username -->
+                <label for="nombre">Nombre</label><br>
+                <input id="labe1" type="text" name="nombre"> <br>
+                <!-- Password -->
+                <label for="email">Email</label> <br>
+                <input id="labe1" type="email" name="email"> <br> 
+
+                <label for="clave">Contraseña</label> <br>
+                <input id="labe1" type="password" name="clave"> <br>
+
+                <br><br>
+                <button id="input__1"  type="submit" name="guardar_registro">Registrarse</button>
+
+
+            </form>       
+
+        </div>
+
+    </div>
+    
 </body>
 </html>
