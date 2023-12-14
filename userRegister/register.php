@@ -25,7 +25,7 @@
                 <label for="clave">Contraseña</label> <br>
                 <input id="labe1" type="password" name="clave"> <br>
 
-                <br><br>
+                <br><br> 
                 <button id="input__1"  type="submit" name="guardar_registro">Registrarse</button>
 
 

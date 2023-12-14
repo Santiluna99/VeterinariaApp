@@ -67,7 +67,7 @@ nav ul li:last-child a{
   }
   
   th {
-    background-color: #325D7D;
+    background-color: #007ACC;
     color: #FFFFFF;
     font-weight: bold;
   }
@@ -102,7 +102,7 @@ nav ul li:last-child a{
   }
   
   .buy-button:hover {
-    background-color: #005F8C;
+    background-color: #007ACC;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
   

@@ -51,13 +51,13 @@ body {
 }
 
 .navbar .menu li a:hover {
-    border-bottom: 3px solid #005eaa;
+    border-bottom: 3px solid #007ACC;
 }
 
 main h1 {
     display: flex;
     justify-content: center;
-    color:#005eaa;
+    color:#007ACC;
 }
 
 .subtitulo{
@@ -70,14 +70,15 @@ main h1 {
 .flex-container {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
+    /* flex-direction: column; */
+    flex-flow: column wrap;
 }
 
-.flex-container div {
+/* .flex-container div {
     display: flex;
     justify-content: center;
-/*     flex-direction: column; */
-    height: 220px;
+    flex-direction: column;
+    height: 420px;
     width: 220px;
     border-radius: 10px;
     box-shadow:  0px 0px 8px 0px #b7b7b7;
@@ -87,13 +88,18 @@ main h1 {
 .flex-container div img{
     height: 200px;
     width: 200px;
-    filter: sepia(1);
     cursor: pointer;
+} */
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    width: 200px;
 }
 
-.flex-container div img:hover{
-    filter: sepia(0);
-}
+
 
 footer {
     display: flex;
@@ -101,7 +107,7 @@ footer {
     background: #005eaa;
     color: white;
     padding: 20px;
-    margin-top: 200px;
+    margin-top: 180px;
 }
 
 @media (min-width:320px) {
@@ -130,12 +136,13 @@ footer {
     .flex-container div img{
         height: 190px;
         width: 190px;
-        filter: sepia(1);
         cursor: pointer;
     }
-    
-    .flex-container div img:hover{
-        filter: sepia(0);
+
+    .card {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     
 }
@@ -166,12 +173,7 @@ footer {
     .flex-container div img{
         height: 230px;
         width: 230px;
-        filter: sepia(1);
         cursor: pointer;
-    }
-    
-    .flex-container div img:hover{
-        filter: sepia(0);
     }
     
 }
@@ -204,12 +206,7 @@ footer {
     .flex-container div img{
         height: 200px;
         width: 200px;
-        filter: sepia(1);
         cursor: pointer;
-    }
-    
-    .flex-container div img:hover{
-        filter: sepia(0);
     }
 }
 
@@ -241,11 +238,7 @@ footer {
     .flex-container div img{
         height: 200px;
         width: 200px;
-        filter: sepia(1);
         cursor: pointer;
     }
     
-    .flex-container div img:hover{
-        filter: sepia(0);
-    }
 }

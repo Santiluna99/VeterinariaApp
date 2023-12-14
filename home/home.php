@@ -19,7 +19,7 @@ $result = $conn->query($sql);
     <div class="logo"><h1>Veterinaria Amigable</h1></div>
     <ul class="menu">
        <li><a href="registerMascota.php">Agendar turno</a></li>
-        <li><a href="./userRegister/register.php">cerrar sesión</a></li>
+        <li><a href="../salir.php">cerrar sesión</a></li>
     </ul>
 </nav>
 
@@ -33,9 +33,8 @@ $result = $conn->query($sql);
               echo "<form action='saveProduct.php' method='POST'>";
               echo "<div class='card'>";
               echo "<img src=" . $row['imgURL'] . " />";
-              /* echo "<h2>" . $row['nombre_prod'] . "</h2>";
+              echo "<h4>" . $row['nombre_prod'] . "</h4>";
               echo "<p>Precio: $" . $row['precio_prod'] . "</p>";
-              echo "<p>Categoría: " . $row['categoria'] . "</p>"; */
               echo "<input type='hidden' name='id_producto[]' value='" . $row['id_prod'] . "'>";
               echo "<button type='submit' name='guardar_producto'> Comprar </button>";
               echo "</div>";

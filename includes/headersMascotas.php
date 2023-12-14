@@ -15,7 +15,7 @@
         <a href="../crudMascota/read.php">READ</a>
         <a href="../crudMascota/delete.php">DELETE</a>
         <a href="../crudMascota/update.php">UPDATE</a>
-        <a href="../paneladmin.php">Panel de control</a>
+        <a href="../paneladmin.php"  class="panel-button">Panel de control</a>
     </header>   
 </body>
  </html>

@@ -15,7 +15,7 @@
         <a href="../crudUsuario/read.php">READ</a>
         <a href="../crudUsuario/delete.php">DELETE</a>
         <a href="../crudUsuario/update.php">UPDATE</a>
-        <a href="../paneladmin.php">Panel de control</a>
+        <a href="../paneladmin.php"  class="panel-button">Panel de control</a>
     </header>   
 </body>
  </html>
