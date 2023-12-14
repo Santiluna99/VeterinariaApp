@@ -11,7 +11,7 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop veterinaria amigable</title>
-    <link rel="stylesheet" href="../styles/styleIndex.css">
+    <link rel="stylesheet" href="../styles/styleHome.css">
 </head>
 <body>
     
@@ -24,27 +24,33 @@ $result = $conn->query($sql);
 </nav>
 
 <main>
-    <div class="flex-container">
-      <?php
-      // Verifica si hay resultados de la consulta
-      if ($result && $result->num_rows > 0) {
-          // Imprime los datos de cada fila como tarjetas (cards)
-          while($row = $result->fetch_assoc()) {
-              echo "<form action='saveProduct.php' method='POST'>";
-              echo "<div class='card'>";
-              echo "<img src=" . $row['imgURL'] . " />";
-              echo "<h4>" . $row['nombre_prod'] . "</h4>";
-              echo "<p>Precio: $" . $row['precio_prod'] . "</p>";
-              echo "<input type='hidden' name='id_producto[]' value='" . $row['id_prod'] . "'>";
-              echo "<button type='submit' name='guardar_producto'> Comprar </button>";
-              echo "</div>";
-              echo "</form>";
-          }
-      } else {
-          echo "No hay productos disponibles.";
-      }
-      ?>
-    </div>
+   <!--  <div class="flex-container"> -->
+    <section class="products">
+      <div class="all-products">
+        <?php
+        // Verifica si hay resultados de la consulta
+        if ($result && $result->num_rows > 0) {
+            // Imprime los datos de cada fila como tarjetas (cards)
+            while($row = $result->fetch_assoc()) {
+                echo "<form action='saveProduct.php' method='POST'>";
+                echo "<div class='product'>";
+                echo "<img src=" . $row['imgURL'] . " />";
+                echo "<div class='product-info'>";
+                echo "<h4 class='product-title'>" . $row['nombre_prod'] . "</h4>";
+                echo "<p class='product-price'>USD $" . $row['precio_prod'] . "</p>";
+                echo "<input type='hidden' name='id_producto[]' value='" . $row['id_prod'] . "'>";
+                echo "<button type='submit' class='product-btn' name='guardar_producto'> Comprar </button>";
+                echo "</div>";
+                echo "</div>";
+                echo "</form>";
+            }
+        } else {
+            echo "No hay productos disponibles.";
+        }
+        ?>
+      </div>
+    </section>
+    <!-- </div> -->
 
 </main>
 <footer>

@@ -49,7 +49,10 @@ if (isset($_POST['update2'])){
             <input type="text" name="clave" value="<?php print $clave;?>" class = "form-control" placeholder="Actualizar contraseña">
 
             <label for="id_rol">Rol:</label>
-            <input type="text" name="id_rol" value="<?php print $id_rol;?>" class="form-control" placeholder="Actualizar rol">
+            <select id="id_rol" name="id_rol">
+                <option value="1"> Admin </option>
+                <option value="2" selected> Usuario </option>
+            </select>
 
             <button type="submit" name="update2">Actualizar</button>
         </form>

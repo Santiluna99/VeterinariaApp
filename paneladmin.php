@@ -53,5 +53,32 @@
                 <?php } ?>
         </tbody>
     </table>
+
+    <h2 class="titulo1">Turnos</h2>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Especie</th>
+                <th>Raza</th>
+                <th>Edad</th>
+                <th>Turno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+                $query_turnos = "SELECT * FROM mascota";
+
+                $result_turnos = mysqli_query($conn, $query_turnos);
+
+                while ($row = mysqli_fetch_array($result_turnos)) { ?>
+                    <tr>
+                        <td><?php echo $row['especie']; ?></td>
+                        <td><?php echo $row['raza']; ?></td>
+                        <td><?php echo $row['edad']; ?></td>
+                        <td><?php echo $row['turno']; ?></td>
+                    </tr>
+                <?php } ?>
+        </tbody>
+    </table>
 </body>
 </html>

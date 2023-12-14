@@ -12,7 +12,10 @@
             <input type="password" id="raza" name="clave" required placeholder="Contraseña">
 
             <label for="id_rol">Rol:</label>
-            <input type="text" id="edad" name="id_rol" required placeholder="Rol">
+            <select id="id_rol" name="id_rol">
+                <option value="1"> Admin </option>
+                <option value="2" selected> Usuario </option>
+            </select>
 
             <button type="submit" name="guardar_registro">Registrar</button>
         </form>

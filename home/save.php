@@ -6,11 +6,12 @@ if (isset($_POST['guardar_registro'])){
     $especie = $_POST['especie'];
     $raza = $_POST['raza'];
     $edad = $_POST['edad'];
+    $turno = $_POST['turno'];
     //echo $nombres;
     //echo $direccion;
 }
 
-    $query = "INSERT INTO mascota(nombres, especie, raza, edad) VALUES ('$nombres','$especie','$raza','$edad')";
+    $query = "INSERT INTO mascota(nombres, especie, raza, edad, turno) VALUES ('$nombres','$especie','$raza','$edad','$turno')";
 	//die( $query);
     $result = mysqli_query($conn, $query);
     if(!$result){

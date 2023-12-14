@@ -11,7 +11,7 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop veterinaria amigable</title>
-    <link rel="stylesheet" href="./styles/styleIndex.css">
+    <link rel="stylesheet" href="./styles/styleHome.css">
 </head>
 <body>
     
@@ -24,92 +24,30 @@ $result = $conn->query($sql);
 </nav>
 
 <main>
-    <h2 class="subtitulo"> ¡Inicia sesión o registrate para comprar!</h2>
-    <div class="flex-container">
-    <?php
-    // Verifica si hay resultados de la consulta
-    if ($result && $result->num_rows > 0) {
-        // Imprime los datos de cada fila como tarjetas (cards)
-        while($row = $result->fetch_assoc()) {
-            echo "<div class='card'>";
-            echo "<img src=" . $row['imgURL'] . " />";
-            /* echo "<h2>" . $row['nombre_prod'] . "</h2>";
-            echo "<p>Precio: $" . $row['precio_prod'] . "</p>";
-            echo "<p>Categoría: " . $row['categoria'] . "</p>"; */
-            echo "</div>";
+<section class="products">
+<h2>¡Ingresa para comprar!</h2>
+      <div class="all-products">
+        <?php
+        // Verifica si hay resultados de la consulta
+        if ($result && $result->num_rows > 0) {
+            // Imprime los datos de cada fila como tarjetas (cards)
+            while($row = $result->fetch_assoc()) {
+                echo "<form action='saveProduct.php' method='POST'>";
+                echo "<div class='product'>";
+                echo "<img src=" . $row['imgURL'] . " />";
+                echo "<div class='product-info'>";
+                echo "<h4 class='product-title'>" . $row['nombre_prod'] . "</h4>";
+                echo "<p class='product-price'>USD $" . $row['precio_prod'] . "</p>";
+                echo "</div>";
+                echo "</div>";
+                echo "</form>";
+            }
+        } else {
+            echo "No hay productos disponibles.";
         }
-    } else {
-        echo "No hay productos disponibles.";
-    }
-    ?>
-
-     <!-- <div>
-       <img
-         src="imagenes/1.jpg"
-         alt=""
-       />
-     </div> 
-     <div>
-       <img
-         src="imagenes/2.jpg"
-         alt=""
-       />
-     </div> 
-     <div>
-       <img
-         src="imagenes/3.jpg"
-         alt=""
-       />
-     </div> 
-     <div>
-       <img
-         src="imagenes/4.jpg"
-         alt=""
-       />
-     </div> 
-     <div>
-       <img
-         src="imagenes/5.jpg"
-         alt=""
-       />
-     </div> 
-     <div>
-       <img
-         src="imagenes/6.jpg"
-         alt=""
-       />
-     </div> 
-     <div>
-       <img
-         src="imagenes/7.jpg"
-         alt=""
-       />
-     </div> 
-     <div>
-       <img
-         src="imagenes/8.jpg"
-         alt=""
-       />
-     </div> 
-     <div>
-       <img
-         src="imagenes/9.jpg"
-         alt=""
-       />
-     </div> 
-     <div>
-       <img
-         src="imagenes/10.jpg"
-         alt=""
-       />
-     </div> 
-     <div>
-       <img
-         src="imagenes/11.jpg"
-         alt=""
-       />
-     </div>  -->
-    </div>
+        ?>
+      </div>
+    </section>
 </main>
 <footer>
     <small>Veterinaria amigable 2023 &copy derechos reservados</small>
