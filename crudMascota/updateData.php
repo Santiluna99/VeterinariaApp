@@ -20,6 +20,8 @@ if (isset($_POST['update2'])){
     $especie = $_POST['especie']; // Variable correcta para especie
     $raza = $_POST['raza']; // Variable para raza
     $edad = $_POST['edad']; // Variable para edad
+    
+
 
     $query = "UPDATE mascota SET nombres = '$nombres', especie = '$especie', raza = '$raza', edad = '$edad' WHERE codigo = $codigo";
     $result = mysqli_query($conn, $query);
@@ -80,6 +82,7 @@ if (isset($_POST['update2'])){
 
             <label for="edad">Edad:</label>
             <input type="number" name="edad" value="<?php print $edad;?>" class="form-control" placeholder="Actualizar edad">
+
 
             <button type="submit" name="update2">Actualizar</button>
         </form>

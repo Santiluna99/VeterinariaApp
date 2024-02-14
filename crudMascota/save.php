@@ -10,7 +10,7 @@ if (isset($_POST['guardar_registro'])){
     //echo $direccion;
 }
 
-    $query = "INSERT INTO mascota(nombres, especie, raza, edad) VALUES ('$nombres','$especie','$raza','$edad')";
+    $query = "INSERT INTO mascota (nombres, especie, raza, edad) VALUES ('$nombres','$especie','$raza','$edad')";
 	//die( $query);
     $result = mysqli_query($conn, $query);
     if(!$result){

@@ -17,6 +17,7 @@
                             <th>Edad</th>
                             <th>Fecha Creación de Registro</th>
                             <th>Acción</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -30,7 +31,9 @@
                                 <td><?php echo $row['especie']?></td>
                                 <td><?php echo $row['raza']?></td>
                                 <td><?php echo $row['edad']?></td>
-                                <td><?php echo $row['fecha_registro']?></td>
+                                <td><?php echo $row['turno']?></td>
+                                
+                                
                                 <td>
                                     <a href="deleteData.php?id=<?php echo $row['codigo']?>">
                                     <button type="button" class="btn btn-danger">Eliminar</button>

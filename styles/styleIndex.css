@@ -9,7 +9,7 @@ body {
 }
 
 .menu-btn {
-    color: #424144;
+    Color: #424144;
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -23,12 +23,12 @@ body {
     position: sticky;
     top: 0; /* Fijar la barra en la parte superior */
     z-index: 999;
-    background-color: #f3f4f6;
+    background-Color: #f3f4f6;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
 .navbar .logo h1 {
-    color: #424144;
+    Color: #424144;
     border-bottom: 3px solid #005eaa;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar .menu li a {
-    color: #424144;
+    Color: #424144;
     text-decoration: none;
     font-size: 14px; /* Tamaño de letra ajustado */
     font-weight: bold;
@@ -57,12 +57,12 @@ body {
 main h1 {
     display: flex;
     justify-content: center;
-    color:#007ACC;
+    Color:#007ACC;
 }
 
 .subtitulo{
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-    color: rgb(77, 77, 77);
+    Color: rgb(77, 77, 77);
 }

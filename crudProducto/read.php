@@ -27,7 +27,9 @@
                                 <td class="text-left"><?php echo $row['nombre_prod']?></td>
                                 <td class="text-left"><?php echo $row['precio_prod']?></td>
                                 <td class="text-left"><?php echo $row['imgURL']?></td>
+                                
                             </tr>
+                            
                         <?php } ?>
                         
                     </tbody>

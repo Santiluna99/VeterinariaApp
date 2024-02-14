@@ -121,5 +121,5 @@ CREATE TABLE compras (
     `id_prod` INT(11) NOT NULL,
     PRIMARY KEY (`id_compra`) USING BTREE, 
     FOREIGN KEY (`id_prod`) REFERENCES productos(`id_prod`),
-    FOREIGN KEY (`id_user`) REFERENCES usuarios(`id_user`),  
+    FOREIGN KEY (`id_user`) REFERENCES usuarios(`id_user`)  
 ) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
