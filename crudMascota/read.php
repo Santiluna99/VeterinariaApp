@@ -16,7 +16,7 @@
                             <th class="text-left">Especie</th>
                             <th class="text-left">Raza</th>
                             <th class="text-left">Edad</th>
-                            <th class="text-left">Fecha Creación de Registro</th>
+                            
 
                         </tr>
                     </thead>
@@ -31,7 +31,7 @@
                                 <td class="text-left"><?php echo $row['especie']?></td>
                                 <td class="text-left"><?php echo $row['raza']?></td>
                                 <td class="text-left"><?php echo $row['edad']?></td>
-                                <td class="text-left"><?php echo $row['turno']?></td>
+                                
                             </tr>
                         <?php } ?>
                         

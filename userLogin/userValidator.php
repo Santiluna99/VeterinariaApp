@@ -6,6 +6,8 @@ include("../session.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["email"]) && isset($_POST["clave"])) {
     $email = $_POST["email"];
     $clave = $_POST["clave"];
+    // $email = filter_var($_POST["email"], FILTER_SANITIZE_STRING);
+    // $clave = filter_var($_POST["clave"], FILTER_SANITIZE_STRING);
 
     // Consulta SQL para verificar el usuario en la tabla usuarios
     $query = "SELECT id_rol FROM usuarios WHERE email = '$email' AND clave = '$clave'";
